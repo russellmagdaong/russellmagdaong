@@ -1,135 +1,50 @@
-<div align="center">
+# Russell Magdaong
 
-  # Hi there, I'm Russell Magdaong 👋
-  ### Aspiring Software Engineering & Full-Stack Intern | Game Developer | DOST Scholar
+I'm a student developer from the Philippines and a DOST-SEI scholar. Most of what I build ends up being a game that teaches something: math, programming, or whatever I was struggling to learn at the time.
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Building+interactive+applications+%26+educational+games;Full-Stack+Web+%7C+Godot+Engine+%7C+Modern+Frameworks;Passionate+about+clean+code+%26+impactful+software)](https://git.io/typing-svg)
+I like the part of a project where the "fun" layer and the "is this actually correct" layer have to meet. In practice that means a lot of Godot on the front and a lot of plain, deterministic code behind it.
 
-  <p align="center">
-    <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-    <a href="https://linkedin.com/in/your-linkedin-slug"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="https://algebrawl.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-Algebrawl-000000?style=flat-square&logo=vercel&logoColor=white" alt="Algebrawl Live" /></a>
-  </p>
+I'm currently looking for a software engineering internship.
 
-</div>
+## What I've been building
 
----
+### ODIN — a tutoring system disguised as a dungeon crawler
 
-### 🚀 About Me
+[Play it](https://insomnicode-odin.vercel.app) · [Game client source](https://github.com/russellmagdaong/odin-game)
 
-- 🎓 **Computer Science / IT Student** preparing for upcoming software engineering internships.
-- 💡 Passionate about **interactive software, educational technology, full-stack web applications, and game mechanics**.
-- 🛠️ Currently developing and maintaining projects combining **React, TypeScript, Godot (GDScript), .NET/C#, and AI API integrations**.
-- 📜 Certified in **PMI Project Management Ready** and **Python Development**.
-- 🎯 Looking for internship opportunities where I can contribute to real-world engineering teams, build scalable solutions, and learn best practices.
+ODIN is my undergraduate thesis, built with three teammates as InsomniCode. It teaches C# arrays through a pixel-art RPG: you walk a dungeon, run into an enemy, and win the fight by writing real code in an in-game editor.
 
----
+The interesting part is what happens after you hit submit. The game records how you typed (pauses, bursts, how much you changed between attempts) and sends it with your code to an ASP.NET Core backend. There, Roslyn parses the code to find the specific misconception, such as an off-by-one loop bound, and Bayesian Knowledge Tracing estimates how well you know the skill. The typing data is used to tell a student who is thinking apart from one who is guessing or stuck in a loop, and the NPC hint you get depends on which one you are.
 
-### 🛠️ Tech Stack & Tools
+Godot 4 (GDScript) exported to the web, ASP.NET Core 8, PostgreSQL, React.
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" height="40" alt="React" />
-      <br><sub><b>React</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
-      <br><sub><b>TypeScript</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
-      <br><sub><b>JavaScript</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind CSS" />
-      <br><sub><b>Tailwind CSS</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/godot/godot-original.svg" width="40" height="40" alt="Godot" />
-      <br><sub><b>Godot 4</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" height="40" alt="Java" />
-      <br><sub><b>Java</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40" alt="Python" />
-      <br><sub><b>Python</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" height="40" alt="C#" />
-      <br><sub><b>C# / .NET</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" width="40" height="40" alt="Supabase" />
-      <br><sub><b>Supabase</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" />
-      <br><sub><b>PostgreSQL</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" width="40" height="40" alt="SQLite" />
-      <br><sub><b>SQLite</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="40" height="40" alt="Vite" />
-      <br><sub><b>Vite</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" />
-      <br><sub><b>Git</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40" height="40" alt="GitHub" />
-      <br><sub><b>GitHub</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++" />
-      <br><sub><b>C++</b></sub>
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" />
-      <br><sub><b>VS Code</b></sub>
-    </td>
-  </tr>
-</table>
+### TAKO — a math RPG that works without internet
 
----
+[Source](https://github.com/russellmagdaong/tako-game)
 
-### 🌟 Featured Projects
+An Android math RPG for Grades 7–10, aligned with the DepEd curriculum and playable in English or Filipino. It was built for students who don't have reliable internet, so everything runs from a local SQLite database and syncs to Supabase only when a connection exists.
 
-| Project | Highlights & Tech Stack | Links |
-| :--- | :--- | :--- |
-| **⚔️ Algebrawl** | Arcade-style turn-based math battle game with KaTeX math rendering, Web Audio synthesis, and responsive scaling. Built originally in Java Swing, modernized to the web. <br>`React 19` `TypeScript` `Vite` `Tailwind CSS` `KaTeX` | [🎮 Live Demo](https://algebrawl.vercel.app) • [💻 Code](https://github.com/russellmagdaong/algebrawl) |
-| **🐙 TAKO (Adaptive Knowledge Game)** | Offline-first, mobile-first educational math RPG aligned with UN SDGs & DepEd curriculum. Features bilingual AI-generated curriculum questions and adaptive feedback. <br>`Godot 4` `GDScript` `Google Gemini API` `SQLite` `Supabase` | [💻 Code](https://github.com/russellmagdaong/tako-game) |
+Gemini writes the questions and the feedback, but it never grades anything. Answers are checked by ordinary code that knows `1/2`, `0.5` and `2/4` are the same number, and wrong answers are matched to known mistakes before the AI is asked to explain them. If the AI is unreachable, the game falls back to templates and keeps going.
 
----
+Godot 4 (GDScript), SQLite, Supabase, Gemini 2.5 Flash.
 
-### 🏆 Certifications & Affiliations
+### Algebrawl — turn-based fights against famous mathematicians
 
-- 🏅 **PMI Project Management Ready™** — Project Management Institute
-- 🐍 **Certified Python Developer**
-- 🌟 **DOST-SEI Scholar**
+[Play it](https://algebrawl.vercel.app) · [Source](https://github.com/russellmagdaong/algebrawl)
 
----
+This started as a Java Swing project for a college class. I later ported it to the web so people could play it without installing anything. You battle Gauss, Newton and Fibonacci by solving problems, with KaTeX rendering the math and the Web Audio API generating the sound effects.
 
-### 📊 GitHub Overview
+React 19, TypeScript, Vite, Tailwind CSS. The original Java version is still in the repo.
 
-<div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=russellmagdaong&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Russell's GitHub Stats" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=russellmagdaong&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</div>
+## Tools I reach for
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=russellmagdaong&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+- **Games:** Godot 4, GDScript
+- **Web:** TypeScript, React, Vite, Tailwind CSS
+- **Backend and data:** C# / ASP.NET Core, PostgreSQL, SQLite, Supabase
+- **Also comfortable in:** Java, Python, C++
 
----
+## Other things
 
-<div align="center">
-  <sub>Designed & Developed with ❤️ by Russell Magdaong</sub>
-</div>
+- DOST-SEI Scholar
+- PMI Project Management Ready, Project Management Institute
+- Python developer certification
