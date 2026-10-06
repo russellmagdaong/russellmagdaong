@@ -1,4 +1,13 @@
+<div align="center">
+
 # Russell Magdaong
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=1200&color=478CBF&center=true&vCenter=true&width=620&lines=I+build+games+that+teach+things.;Godot+up+front%2C+plain+code+behind+it.;Now+building+ODIN%3A+a+tutor+inside+a+dungeon+crawler.;Looking+for+a+software+engineering+internship.)](https://github.com/russellmagdaong)
+
+<!-- socials -->
+<a href="https://github.com/russellmagdaong"><img src="https://img.shields.io/badge/GitHub-russellmagdaong-0D1117?style=for-the-badge&logo=github&logoColor=white&labelColor=478CBF" alt="GitHub" /></a>
+
+</div>
 
 I'm a student developer from the Philippines and a DOST-SEI scholar. Most of what I build ends up being a game that teaches something: math, programming, or whatever I was struggling to learn at the time.
 
@@ -10,7 +19,8 @@ I'm currently looking for a software engineering internship.
 
 ### ODIN — a tutoring system disguised as a dungeon crawler
 
-[Play it](https://insomnicode-odin.vercel.app) · [Game client source](https://github.com/russellmagdaong/odin-game)
+<a href="https://insomnicode-odin.vercel.app"><img src="https://img.shields.io/badge/Play_it-478CBF?style=flat-square&logo=godotengine&logoColor=white" alt="Play ODIN" /></a>
+<a href="https://github.com/russellmagdaong/odin-game"><img src="https://img.shields.io/badge/Game_client_source-0D1117?style=flat-square&logo=github&logoColor=white" alt="ODIN source" /></a>
 
 ODIN is my undergraduate thesis, built with three teammates as InsomniCode. It teaches C# arrays through a pixel-art RPG: you walk a dungeon, run into an enemy, and win the fight by writing real code in an in-game editor.
 
@@ -20,7 +30,7 @@ Godot 4 (GDScript) exported to the web, ASP.NET Core 8, PostgreSQL, React.
 
 ### TAKO — a math RPG that works without internet
 
-[Source](https://github.com/russellmagdaong/tako-game)
+<a href="https://github.com/russellmagdaong/tako-game"><img src="https://img.shields.io/badge/Source-0D1117?style=flat-square&logo=github&logoColor=white" alt="TAKO source" /></a>
 
 An Android math RPG for Grades 7–10, aligned with the DepEd curriculum and playable in English or Filipino. It was built for students who don't have reliable internet, so everything runs from a local SQLite database and syncs to Supabase only when a connection exists.
 
@@ -30,7 +40,8 @@ Godot 4 (GDScript), SQLite, Supabase, Gemini 2.5 Flash.
 
 ### Algebrawl — turn-based fights against famous mathematicians
 
-[Play it](https://algebrawl.vercel.app) · [Source](https://github.com/russellmagdaong/algebrawl)
+<a href="https://algebrawl.vercel.app"><img src="https://img.shields.io/badge/Play_it-478CBF?style=flat-square&logo=vercel&logoColor=white" alt="Play Algebrawl" /></a>
+<a href="https://github.com/russellmagdaong/algebrawl"><img src="https://img.shields.io/badge/Source-0D1117?style=flat-square&logo=github&logoColor=white" alt="Algebrawl source" /></a>
 
 This started as a Java Swing project for a college class. I later ported it to the web so people could play it without installing anything. You battle Gauss, Newton and Fibonacci by solving problems, with KaTeX rendering the math and the Web Audio API generating the sound effects.
 
