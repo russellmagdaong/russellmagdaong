@@ -3,7 +3,7 @@
   <br /><br />
   <a href="https://www.facebook.com/russssm"><img src="assets/btn-facebook.svg" height="40" alt="Facebook" /></a>
   <a href="mailto:russelldizonmagdaong@gmail.com"><img src="assets/btn-email.svg" height="40" alt="Email" /></a>
-  <img src="assets/btn-portfolio.svg" height="40" alt="Portfolio: coming soon" />
+  <a href="https://russm.vercel.app"><img src="assets/btn-portfolio.svg" height="40" alt="Portfolio" /></a>
 </div>
 
 <br />
