@@ -27,7 +27,6 @@ LINES = [
 
 # Colours lifted from ODIN's in-game dialogue box.
 PANEL = "#21252e"
-INSET = "#171a21"
 BORDER = "#1e90ff"
 CYAN = "#00ffff"
 WHITE = "#ffffff"
@@ -44,6 +43,10 @@ ICONS = {
     "play": '<path d="M5 2.5l12 7.5-12 7.5z"/>',
     "source": '<path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="square" d="M7 5l-5 5 5 5M13 5l5 5-5 5"/>',
 }
+
+
+def data_uri(name):
+    return "data:image/png;base64," + base64.b64encode((HERE / name).read_bytes()).decode()
 
 
 class Canvas:
@@ -100,7 +103,7 @@ class Canvas:
 
 def header():
     c = Canvas()
-    w, h = 860, 220
+    w, h = 860, 236
     text_x, text_right = 178, 836
     cycle = SECONDS_PER_LINE * len(LINES)
     line_pct = (SECONDS_PER_LINE - 0.3) / cycle * 100
@@ -108,12 +111,14 @@ def header():
 
     body = [
         f'<rect x="2" y="2" width="{w - 4}" height="{h - 4}" rx="8" fill="{PANEL}" stroke="{BORDER}" stroke-width="4"/>',
-        f'<rect x="22" y="22" width="132" height="176" rx="6" fill="{INSET}" stroke="{BORDER}" stroke-width="3"/>',
+        # portrait: the player standing in ODIN's classroom, so the dark hair reads on any theme
+        '<clipPath id="portrait"><rect x="23.5" y="23.5" width="129" height="189" rx="4.5"/></clipPath>',
+        f'<image href="{data_uri("portrait-bg.png")}" x="22" y="22" width="132" height="192" clip-path="url(#portrait)"/>',
+        f'<image href="{data_uri("player.png")}" x="44" y="40" width="88" height="168"/>',
+        f'<rect x="22" y="22" width="132" height="192" rx="6" fill="none" stroke="{BORDER}" stroke-width="3"/>',
     ]
-    sprite = base64.b64encode((HERE / "player.png").read_bytes()).decode()
-    body.append(f'<image href="data:image/png;base64,{sprite}" x="44" y="26" width="88" height="168"/>')
-    body.append(c.text(NAME, text_x, 66, 40, CYAN))
-    body.append(c.text(ROLE, text_x, 95, 17, MUTED))
+    body.append(c.text(NAME, text_x, 72, 40, CYAN))
+    body.append(c.text(ROLE, text_x, 101, 17, MUTED))
 
     for n, line in enumerate(LINES):
         start = n * SECONDS_PER_LINE
@@ -123,13 +128,13 @@ def header():
             def delay(i, typed=typed):
                 return f'class="c" style="animation-delay:{start + 0.25 + (typed + i) * SECONDS_PER_CHAR:.2f}s"'
 
-            rows.append(c.text(part, text_x, 138 + row * 30, 24, WHITE, char_attrs=delay))
+            rows.append(c.text(part, text_x, 146 + row * 30, 24, WHITE, char_attrs=delay))
             typed += len(part) + 1
         body.append(f'<g class="m m{n}" style="animation-delay:{start}s">' + "".join(rows) + "</g>")
 
-    body.append(f'<g opacity=".55">{c.text("[Enter]/[Click] Next", text_right, 200, 14, WHITE, anchor="end")}</g>')
+    body.append(f'<g opacity=".55">{c.text("[Enter]/[Click] Next", text_right, 214, 14, WHITE, anchor="end")}</g>')
     hint_x = text_right - c.width("[Enter]/[Click] Next", 14) - 18
-    body.append(f'<path class="nx" d="M{hint_x:.1f} 189h10l-5 8z" fill="{CYAN}"/>')
+    body.append(f'<path class="nx" d="M{hint_x:.1f} 203h10l-5 8z" fill="{CYAN}"/>')
 
     css = (
         f".m{{opacity:0;animation:m {cycle}s steps(1,end) infinite}}"
