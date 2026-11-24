@@ -1,0 +1,23 @@
+name: Daily activity
+
+on:
+  schedule:
+    - cron: "17 12 * * *" # 20:17 Philippine time (UTC+8)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Commit daily log
+        run: |
+          git config user.name "russellmagdaong"
+          git config user.email "128214096+russellmagdaong@users.noreply.github.com"
+          date -u +"%Y-%m-%d %H:%M UTC" >> activity.log
+          git add activity.log
+          git commit -m "chore: daily log $(date -u +%F)"
+          git push
